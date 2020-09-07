@@ -31,7 +31,7 @@ int main()
 	
 	CAN1 ->MCR |= CAN_MCR_INRQ;
 	
-	CAN1->BTR|=(1<<3);                                       // Prescaler=9                      
+	CAN1->BTR|=(1<<0);                                       // Prescaler=9                      
 	CAN1->BTR|=(1<<19)|(1<<18);                              // Seg1=13
 	CAN1->BTR|=(1<<20);                                      // Seg2=2
 	
